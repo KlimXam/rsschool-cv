@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background-color: #c7c6c6;
+}
+html {
+  scroll-behavior: smooth;
+}
+.wrapper {
+  width: 60%;
+  height: 80%;
+  margin: auto auto;
+  word-wrap: break-word;
+  background-color: #fdfdfd;
+  margin: 1em auto 2em;
+  box-shadow: 5px 5px 5px rgba(250, 50, 50, 0.2);
+}
+
+.wrapper>* {
+  flex: 1 1 auto;
+}
+
+.header {
+  background-color: #c8b594;
+  width: auto;
+}
+
+.header-nav {
+  background-color: #c8b594;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+}
+
+.button {
+  background-color: #c8b594;
+  color: #fdfdfd;
+  box-shadow: 5px 5px 5px rgba(250, 50, 50, 0.1);
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: #272727 1px 1px 1px;
+  font-size: 16px;
+  margin: 3px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 25%;
+  height: auto;
+}
+
+.container {
+  margin: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.container:before {
+  content: "";
+  border: 2px solid #c8b594;
+}
+
+.cont {
+  flex: 2 1 auto;
+}
+
+.first {
+  color: #272727;
+  background-color: #272727;
+  font-size: 1px;
+}
+
+.aside {
+  width: calc(30% - 1px);
+  order: -1;
+  background-color: #272727;
+  padding: 50px 50px 70px;
+}
+
+.article {
+  width: calc(70% - 1px);
+  background-color: #fdfdfd;
+  padding: 50px 50px 70px;
+}
+
+.bg-white {
+  background-color: #fdfdfd;
+}
+
+.bg-brown {
+  background-color: #272727;
+}
+
+.header-logo,
+.aside-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-link {
+  color: #fdfdfd;
+  text-shadow: #272727 1px 1px 1px;
+}
+
+.avatar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px rgba(250, 50, 50, 0.4);
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #272727;
+  margin: 10px 0;
+  border: none;
+  box-shadow: 5px 5px 5px rgba(250, 50, 50, 0.5);
+}
+
+.line-aside {
+  width: 100%;
+  height: 2px;
+  background-color: #fdfdfd;
+  margin: 10px 0;
+  border: none;
+  box-shadow: 5px 5px 5px rgba(250, 50, 50, 0.5);
+}
+
+.menu-list,
+.language-list,
+.skills-list,
+.projects-list {
+  list-style-type: none;
+  text-align: left;
+  font-size: 18px;
+}
+
+.text-white {
+  color: #fdfdfd;
+}
+
+.text-brown {
+  color: #272727;
+}
+
+.dec-non,
+.menu-link,
+.logo-link,
+.footer-author {
+  text-decoration: none;
+}
+
+.menu {
+  background-color: #fdfdfd;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.article-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.menu-img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.menu-item {
+  background-color: #fdfdfd;
+}
+
+.footer {
+  width: 100%;
+  background-color: #c8b594;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-left {
+  background-color: #c8b594;
+  align-items: center;
+  width: 50%;
+  height: auto;
+}
+
+.footer-right,
+.footer-left {
+  background-color: #c8b594;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+}
+
+.logo {
+  background-color: #c8b594;
+  width: 195px;
+  height: 70px;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+}
+
+.footer-logo {
+  background-color: #c8b594;
+}
+
+.footer-author {
+  background-color: #c8b594;
+  text-align: center;
+  font-size: 18px;
+  color: #fdfdfd;
+  text-shadow: #272727 1px 1px 1px;
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    align-items: stretch;
+    flex-direction: row;
+  }
+
+  .header-nav {
+    flex-direction: row;
+  }
+
+  .button {
+    width: 25%;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+
+  .aside,
+  .article {
+    width: 100%;
+    padding: 50px 50px 70px;
+  }
+}
