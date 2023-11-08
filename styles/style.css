@@ -5,7 +5,9 @@
   font-family: "Inter", sans-serif;
   background-color: #c7c6c6;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .wrapper {
   width: 60%;
   height: 80%;
