@@ -5,9 +5,11 @@
   font-family: "Inter", sans-serif;
   background-color: #c7c6c6;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .wrapper {
   width: 60%;
   height: 80%;
@@ -31,8 +33,25 @@ html {
   background-color: #c8b594;
   display: flex;
   flex-direction: row;
-  width: auto;
+  width: 100%;
   height: auto;
+}
+
+.ul {
+  padding: 0px;
+  background-color: #c8b594;
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.li {
+  margin: 3px;
+  background-color: #c8b594;
+  list-style: none;
+  display: flex;
+  width: 25%;
 }
 
 .button {
@@ -41,16 +60,17 @@ html {
   box-shadow: 5px 5px 5px rgba(250, 50, 50, 0.1);
   border: none;
   padding: 10px;
-  text-align: center;
   text-decoration: none;
   font-weight: bold;
   text-shadow: #272727 1px 1px 1px;
   font-size: 16px;
-  margin: 3px;
   cursor: pointer;
   border-radius: 5px;
-  width: 25%;
+  display: inline-flex;
+  justify-content: center;
   height: auto;
+  width: 100%;
+  transition: all 0.5s ease;
 }
 
 .container {
@@ -145,6 +165,13 @@ html {
   font-size: 18px;
 }
 
+.projects-list p,
+.footer-author,
+.logo-link h2 {
+  transition: all 0.5s ease;
+}
+
+
 .text-white {
   color: #fdfdfd;
 }
@@ -158,6 +185,14 @@ html {
 .logo-link,
 .footer-author {
   text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.dec-non,
+.menu-link {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -178,6 +213,8 @@ html {
 
 .menu-item {
   background-color: #fdfdfd;
+  display: flex;
+  align-items: center;
 }
 
 .footer {
@@ -236,7 +273,7 @@ html {
   }
 
   .button {
-    width: 25%;
+    width: 100%;
   }
 
   .footer {
@@ -255,12 +292,14 @@ html {
     flex-direction: column;
   }
 
-  .header-nav {
+  .header-nav,
+  .ul {
     flex-direction: column;
     width: 100%;
   }
 
-  .button {
+  .button,
+  .li {
     width: 100%;
   }
 
@@ -277,5 +316,27 @@ html {
   .article {
     width: 100%;
     padding: 50px 50px 70px;
+  }
+}
+
+@media (hover: hover) {
+  .button:hover {
+    color: #c8b594;
+    background: #272727;
+    border-radius: 10px;
+  }
+
+  .menu-link:hover,
+  .dec-non:hover {
+    color: #c8b594;
+  }
+
+  .projects-list p:hover,
+  .logo-link h2:hover {
+    color: #c8b594;
+  }
+
+  .footer-author:hover {
+    color: #272727;
   }
 }
