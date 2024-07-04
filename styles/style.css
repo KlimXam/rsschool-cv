@@ -11,6 +11,7 @@ html {
 }
 
 .wrapper {
+  max-width: 1500px;
   width: 60%;
   height: 80%;
   margin: auto auto;
