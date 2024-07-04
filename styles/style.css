@@ -99,13 +99,22 @@ html {
   width: calc(30% - 1px);
   order: -1;
   background-color: #272727;
-  padding: 50px 50px 70px;
+  padding: 50px 10px 70px 10px;
 }
-
 .article {
   width: calc(70% - 1px);
   background-color: #fdfdfd;
-  padding: 50px 50px 70px;
+  padding: 50px 50px 70px 50px;
+}
+
+@media only screen and (width < 768px) and (width > 320px) {
+  .article {
+    padding-left: calc((100vw - 321px)/(767 - 321) * (49 - 5) + 5px);
+    padding-right: calc((100vw - 321px)/(767 - 321) * (49 - 5) + 5px);
+  }
+  .wrapper {
+    width: calc((100vw - 321px)/(767 - 321) * (467 - 323) + 323px);
+  }
 }
 
 .bg-white {
@@ -132,8 +141,8 @@ html {
 .avatar {
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
+  width: 100%;
   border-radius: 50%;
   box-shadow: 5px 5px 5px rgba(250, 50, 50, 0.4);
 }
@@ -315,7 +324,7 @@ html {
   .aside,
   .article {
     width: 100%;
-    padding: 50px 50px 70px;
+    /*padding: 50px 50px 70px;*/
   }
 }
 
